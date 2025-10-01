@@ -6,7 +6,7 @@ export default function FeaturesSection() {
   return (
     <section id="features" className="py-20 md:py-32">
       <div className="max-w-7xl mx-auto px-6 md:px-8">
-        <Card className="overflow-hidden border-border/40 bg-card/60 backdrop-blur-sm">
+        <Card className="overflow-hidden shadow-lg">
           <div className="grid lg:grid-cols-2 gap-12 p-8 md:p-12">
             <div className="space-y-8">
               <div>
