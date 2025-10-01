@@ -34,11 +34,11 @@ export default function AboutSection() {
           </div>
 
           <div className="relative">
-            <div className="aspect-[1179/2556] max-w-[320px] mx-auto">
+            <div className="w-full max-w-[280px] mx-auto">
               <img 
                 src={chartsScreenshot} 
                 alt="FirePath Charts and Analytics" 
-                className="w-full h-full object-contain rounded-[2.5rem] shadow-2xl"
+                className="w-full h-auto rounded-[2.5rem] shadow-2xl"
               />
             </div>
           </div>
