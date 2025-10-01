@@ -1,4 +1,4 @@
-import { Flame } from "lucide-react";
+import appIcon from "@assets/ios-app-icon-2_1759308693187.png";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <Flame className="w-6 h-6 text-primary" />
+              <img src={appIcon} alt="FirePath" className="w-8 h-8 rounded-lg" />
               <span className="text-xl font-bold">FirePath</span>
             </div>
             <p className="text-sm text-muted-foreground">

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Flame, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import appIcon from "@assets/ios-app-icon-2_1759308693187.png";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,7 +38,7 @@ export default function Header() {
             className="flex items-center gap-2 hover-elevate rounded-md px-3 py-2"
             data-testid="button-logo"
           >
-            <Flame className="w-6 h-6 text-primary" />
+            <img src={appIcon} alt="FirePath" className="w-8 h-8 rounded-lg" />
             <span className="text-xl font-bold">FirePath</span>
           </button>
 
