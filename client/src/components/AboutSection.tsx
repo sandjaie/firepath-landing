@@ -34,11 +34,12 @@ export default function AboutSection() {
           </div>
 
           <div className="relative">
-            <div className="w-full max-w-[280px] mx-auto">
+            <div className="w-full max-w-[280px] mx-auto overflow-hidden rounded-[2.5rem] shadow-2xl">
               <img 
                 src={chartsScreenshot} 
                 alt="FirePath Charts and Analytics" 
-                className="w-full h-auto rounded-[2.5rem] shadow-2xl"
+                className="w-full h-auto scale-110"
+                style={{ marginTop: '-5%', marginBottom: '-5%' }}
               />
             </div>
           </div>

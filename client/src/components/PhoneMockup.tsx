@@ -7,11 +7,12 @@ export default function PhoneMockup({ className = "", screenshot }: PhoneMockupP
   return (
     <div className={`relative ${className}`} data-testid="phone-mockup">
       {screenshot ? (
-        <div className="relative w-full max-w-[280px] mx-auto">
+        <div className="relative w-full max-w-[280px] mx-auto overflow-hidden rounded-[2.5rem] shadow-2xl">
           <img 
             src={screenshot} 
             alt="FirePath App Screenshot" 
-            className="w-full h-auto rounded-[2.5rem] shadow-2xl"
+            className="w-full h-auto scale-110"
+            style={{ marginTop: '-5%', marginBottom: '-5%' }}
           />
         </div>
       ) : (
