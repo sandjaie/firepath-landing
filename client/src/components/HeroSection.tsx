@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import PhoneMockup from "./PhoneMockup";
 import { ArrowRight } from "lucide-react";
+import homepageScreenshot from "@assets/homepage-usd-light_1759317816529.png";
 
 export default function HeroSection() {
   const scrollToSection = (sectionId: string) => {
@@ -64,7 +65,7 @@ export default function HeroSection() {
           </div>
 
           <div className="relative lg:justify-self-end">
-            <PhoneMockup className="animate-float" />
+            <PhoneMockup className="animate-float" screenshot={homepageScreenshot} />
           </div>
         </div>
       </div>

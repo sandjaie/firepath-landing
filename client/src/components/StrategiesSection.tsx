@@ -2,6 +2,7 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { TrendingUp, Activity, Shield } from "lucide-react";
 import PhoneMockup from "./PhoneMockup";
+import strategiesScreenshot from "@assets/4-plan-dark-portrait_1759317816529.png";
 
 export default function StrategiesSection() {
   return (
@@ -10,7 +11,7 @@ export default function StrategiesSection() {
         <Card className="overflow-hidden shadow-lg">
           <div className="grid lg:grid-cols-2 gap-12 p-8 md:p-12">
             <div className="flex items-center justify-center lg:justify-start order-2 lg:order-1">
-              <PhoneMockup />
+              <PhoneMockup screenshot={strategiesScreenshot} />
             </div>
 
             <div className="space-y-8 order-1 lg:order-2">

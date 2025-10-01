@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Zap, Settings2, Target } from "lucide-react";
 import PhoneMockup from "./PhoneMockup";
+import projectionsScreenshot from "@assets/projections-usd-ligth_1759317816529.png";
 
 export default function FeaturesSection() {
   return (
@@ -86,7 +87,7 @@ export default function FeaturesSection() {
             </div>
 
             <div className="flex items-center justify-center lg:justify-end">
-              <PhoneMockup />
+              <PhoneMockup screenshot={projectionsScreenshot} />
             </div>
           </div>
         </Card>

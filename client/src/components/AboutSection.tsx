@@ -1,4 +1,5 @@
 import { Sparkles } from "lucide-react";
+import chartsScreenshot from "@assets/charts-usd-light_1759317816529.png";
 
 export default function AboutSection() {
   return (
@@ -33,19 +34,12 @@ export default function AboutSection() {
           </div>
 
           <div className="relative">
-            <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 via-accent/10 to-primary/20 p-8 flex items-center justify-center">
-              <div className="text-center space-y-4">
-                <div className="w-20 h-20 mx-auto rounded-2xl bg-card flex items-center justify-center shadow-xl">
-                  <Sparkles className="w-10 h-10 text-primary" />
-                </div>
-                <p className="text-xl font-semibold">
-                  Built for Your Future
-                </p>
-                <p className="text-sm text-muted-foreground max-w-xs mx-auto">
-                  Every feature in FirePath is designed with one goal: helping you
-                  achieve financial freedom on your terms.
-                </p>
-              </div>
+            <div className="aspect-[9/19.5] max-w-[320px] mx-auto">
+              <img 
+                src={chartsScreenshot} 
+                alt="FirePath Charts and Analytics" 
+                className="w-full h-full object-cover rounded-[2.5rem] shadow-2xl"
+              />
             </div>
           </div>
         </div>
