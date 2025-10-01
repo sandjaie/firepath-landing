@@ -11,7 +11,7 @@ export default function DownloadSection() {
         >
           Start Your FIRE Journey Today
         </h2>
-        <p className="text-lg text-muted-foreground leading-relaxed mb-12 max-w-2xl mx-auto">
+        <p className="text-lg text-muted-foreground leading-relaxed mb-12 max-w-2xl mx-auto italic">
           Download FirePath and take the first step toward financial independence.
           Available on iOS and Android.
         </p>

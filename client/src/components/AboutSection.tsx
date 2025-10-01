@@ -16,7 +16,7 @@ export default function AboutSection() {
             >
               Clarity in Your FIRE Journey
             </h2>
-            <div className="space-y-4 text-muted-foreground leading-relaxed">
+            <div className="space-y-4 text-muted-foreground leading-relaxed italic">
               <p data-testid="text-about-description">
                 FirePath is designed for individuals who want clarity in their
                 FIRE journey. Whether you prioritize minimalism, balance, or

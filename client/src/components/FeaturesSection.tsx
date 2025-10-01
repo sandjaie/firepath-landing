@@ -16,7 +16,7 @@ export default function FeaturesSection() {
                 >
                   How we Calculate?<br />Not so Simple
                 </h2>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed italic">
                   FirePath calculates your FIRE target based on your lifestyle and
                   gives you multiple strategies to achieve it.
                 </p>

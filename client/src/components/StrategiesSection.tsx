@@ -21,7 +21,7 @@ export default function StrategiesSection() {
                 >
                   Retirement Withdrawal Strategies
                 </h2>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed italic">
                   Choose the withdrawal strategy that best fits your retirement
                   goals and risk tolerance.
                 </p>

@@ -29,7 +29,7 @@ export default function HeroSection() {
                 <span className="text-primary">Retire Early</span>
               </h1>
               <p
-                className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl"
+                className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl italic"
                 data-testid="text-hero-subheadline"
               >
                 FirePath is a comprehensive calculator that helps you plan your
