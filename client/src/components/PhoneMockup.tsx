@@ -6,12 +6,12 @@ interface PhoneMockupProps {
 export default function PhoneMockup({ className = "", screenshot }: PhoneMockupProps) {
   return (
     <div className={`relative ${className}`} data-testid="phone-mockup">
-      <div className="relative aspect-[9/19.5] w-full max-w-[300px] mx-auto">
+      <div className="relative aspect-[1179/2556] w-full max-w-[300px] mx-auto">
         {screenshot ? (
           <img 
             src={screenshot} 
             alt="FirePath App Screenshot" 
-            className="w-full h-full object-cover rounded-[2.5rem] shadow-2xl"
+            className="w-full h-full object-contain rounded-[2.5rem] shadow-2xl"
           />
         ) : (
           <div className="absolute inset-0 bg-gradient-to-br from-card to-muted rounded-[3rem] shadow-2xl border-8 border-foreground/10">
