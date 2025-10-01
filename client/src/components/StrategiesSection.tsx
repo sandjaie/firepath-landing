@@ -16,7 +16,7 @@ export default function StrategiesSection() {
             <div className="space-y-8 order-1 lg:order-2">
               <div>
                 <h2
-                  className="text-3xl md:text-4xl font-display font-bold mb-4"
+                  className="text-3xl md:text-4xl font-bold mb-4"
                   data-testid="text-strategies-heading"
                 >
                   Retirement Withdrawal Strategies

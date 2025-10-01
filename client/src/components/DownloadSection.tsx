@@ -6,7 +6,7 @@ export default function DownloadSection() {
     <section id="download" className="py-20 md:py-32 bg-gradient-to-br from-primary/10 via-background to-accent/10">
       <div className="max-w-4xl mx-auto px-6 md:px-8 text-center">
         <h2
-          className="text-4xl md:text-5xl font-display font-bold mb-6"
+          className="text-4xl md:text-5xl font-bold mb-6"
           data-testid="text-download-heading"
         >
           Start Your FIRE Journey Today

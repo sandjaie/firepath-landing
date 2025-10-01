@@ -22,7 +22,7 @@ export default function HeroSection() {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1
-                className="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight"
+                className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight"
                 data-testid="text-hero-headline"
               >
                 Your Path to Financial Independence,{" "}

@@ -15,7 +15,7 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
               <Flame className="w-6 h-6 text-primary" />
-              <span className="text-xl font-display font-bold">FirePath</span>
+              <span className="text-xl font-bold">FirePath</span>
             </div>
             <p className="text-sm text-muted-foreground">
               Your path to financial independence

@@ -11,7 +11,7 @@ export default function AboutSection() {
               <span className="text-sm font-medium text-primary">Why FirePath?</span>
             </div>
             <h2
-              className="text-4xl md:text-5xl font-display font-bold leading-tight"
+              className="text-4xl md:text-5xl font-bold leading-tight"
               data-testid="text-about-heading"
             >
               Clarity in Your FIRE Journey
@@ -38,7 +38,7 @@ export default function AboutSection() {
                 <div className="w-20 h-20 mx-auto rounded-2xl bg-card flex items-center justify-center shadow-xl">
                   <Sparkles className="w-10 h-10 text-primary" />
                 </div>
-                <p className="text-xl font-display font-semibold">
+                <p className="text-xl font-semibold">
                   Built for Your Future
                 </p>
                 <p className="text-sm text-muted-foreground max-w-xs mx-auto">

@@ -11,7 +11,7 @@ export default function FeaturesSection() {
             <div className="space-y-8">
               <div>
                 <h2
-                  className="text-3xl md:text-4xl font-display font-bold mb-4"
+                  className="text-3xl md:text-4xl font-bold mb-4"
                   data-testid="text-features-heading"
                 >
                   How we Calculate?<br />Not so Simple

@@ -38,7 +38,7 @@ export default function Header() {
             data-testid="button-logo"
           >
             <Flame className="w-6 h-6 text-primary" />
-            <span className="text-xl font-display font-bold">FirePath</span>
+            <span className="text-xl font-bold">FirePath</span>
           </button>
 
           <nav className="hidden md:flex items-center gap-8">
