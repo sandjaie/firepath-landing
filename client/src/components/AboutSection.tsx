@@ -34,13 +34,11 @@ export default function AboutSection() {
           </div>
 
           <div className="relative">
-            <div className="w-full max-w-[280px] mx-auto">
-              <img 
-                src={chartsScreenshot} 
-                alt="FirePath Charts and Analytics" 
-                className="w-full h-auto rounded-[2.5rem] shadow-2xl"
-              />
-            </div>
+            <img 
+              src={chartsScreenshot} 
+              alt="FirePath Charts and Analytics" 
+              className="w-full h-auto"
+            />
           </div>
         </div>
       </div>
