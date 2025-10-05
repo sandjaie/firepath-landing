@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Clock } from "lucide-react";
 import PhoneMockup from "./PhoneMockup";
 import homepageScreenshot from "@assets/homepage-usd-light_1759317816529.png";
 import appStoreBadge from "@assets/app-store-badge.svg";
@@ -87,7 +88,10 @@ export default function HeroSection() {
       <AlertDialog open={showComingSoon} onOpenChange={setShowComingSoon}>
         <AlertDialogContent data-testid="dialog-coming-soon">
           <AlertDialogHeader>
-            <AlertDialogTitle>Coming Soon!</AlertDialogTitle>
+            <AlertDialogTitle className="flex items-center gap-2">
+              <Clock className="h-5 w-5" />
+              Coming Soon!
+            </AlertDialogTitle>
             <AlertDialogDescription>
               The Android version of FirePath is currently in development and will be available soon. 
               Stay tuned for updates!

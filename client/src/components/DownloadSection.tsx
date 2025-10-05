@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Clock } from "lucide-react";
 import appStoreBadge from "@assets/app-store-badge.svg";
 import googlePlayBadge from "@assets/Store=Google Play, Type=Dark, Language=English-1_1759691189729.png";
 import {
@@ -65,7 +66,10 @@ export default function DownloadSection() {
       <AlertDialog open={showComingSoon} onOpenChange={setShowComingSoon}>
         <AlertDialogContent data-testid="dialog-coming-soon-download">
           <AlertDialogHeader>
-            <AlertDialogTitle>Coming Soon!</AlertDialogTitle>
+            <AlertDialogTitle className="flex items-center gap-2">
+              <Clock className="h-5 w-5" />
+              Coming Soon!
+            </AlertDialogTitle>
             <AlertDialogDescription>
               The Android version of FirePath is currently in development and will be available soon. 
               Stay tuned for updates!
