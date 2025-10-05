@@ -1,6 +1,5 @@
-import { Button } from "@/components/ui/button";
-import { Apple } from "lucide-react";
-import { SiAndroid } from "react-icons/si";
+import appStoreBadge from "@assets/app-store-badge.svg";
+import googlePlayBadge from "@assets/google-play-badge.png";
 
 export default function DownloadSection() {
   return (
@@ -20,24 +19,29 @@ export default function DownloadSection() {
         </div>
 
         <div className="mt-12 space-y-6">
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              size="lg"
-              className="rounded-full px-8"
-              data-testid="button-download-ios"
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+            <a
+              href="#"
+              className="inline-block"
+              data-testid="link-download-ios"
             >
-              <Apple className="mr-2 w-5 h-5" />
-              Download on iOS
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="rounded-full px-8"
-              data-testid="button-download-android"
+              <img
+                src={appStoreBadge}
+                alt="Download on the App Store"
+                className="h-14"
+              />
+            </a>
+            <a
+              href="#"
+              className="inline-block"
+              data-testid="link-download-android"
             >
-              <SiAndroid className="mr-2 w-5 h-5" />
-              Download on Android
-            </Button>
+              <img
+                src={googlePlayBadge}
+                alt="Get it on Google Play"
+                className="h-14"
+              />
+            </a>
           </div>
 
           <p className="text-sm text-muted-foreground">
