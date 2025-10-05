@@ -1,16 +1,9 @@
-import { Button } from "@/components/ui/button";
 import PhoneMockup from "./PhoneMockup";
-import { ArrowRight } from "lucide-react";
 import homepageScreenshot from "@assets/homepage-usd-light_1759317816529.png";
+import appStoreBadge from "@assets/app-store-badge.svg";
+import googlePlayBadge from "@assets/Store=Google Play, Type=Dark, Language=English-1_1759691189729.png";
 
 export default function HeroSection() {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <section
       id="hero"
@@ -38,25 +31,34 @@ export default function HeroSection() {
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                size="lg"
-                className="rounded-full text-base px-8"
-                onClick={() => scrollToSection("features")}
-                data-testid="button-get-started"
-              >
-                Get Started
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="rounded-full text-base px-8"
-                onClick={() => scrollToSection("download")}
-                data-testid="button-download-hero"
-              >
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold" data-testid="text-download-firepath">
                 Download FirePath
-              </Button>
+              </h3>
+              <div className="flex flex-col sm:flex-row gap-4 items-start">
+                <a
+                  href="#"
+                  className="inline-block"
+                  data-testid="link-download-ios-hero"
+                >
+                  <img
+                    src={appStoreBadge}
+                    alt="Download on the App Store"
+                    className="h-12"
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="inline-block"
+                  data-testid="link-download-android-hero"
+                >
+                  <img
+                    src={googlePlayBadge}
+                    alt="Get it on Google Play"
+                    className="h-12"
+                  />
+                </a>
+              </div>
             </div>
 
             <p className="text-sm text-muted-foreground" data-testid="text-no-account">
