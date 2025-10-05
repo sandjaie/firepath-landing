@@ -51,26 +51,26 @@ export default function AboutSection() {
             </Card>
 
             <Card className="p-8 space-y-6 hover-elevate transition-all duration-300" data-testid="card-projections">
-              <div className="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center">
-                <TrendingUp className="w-7 h-7 text-accent" />
+              <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center">
+                <TrendingUp className="w-7 h-7 text-primary" />
               </div>
               <div className="space-y-4">
                 <h3 className="text-2xl font-bold">Interactive Financial Projections</h3>
                 <div className="space-y-3 text-muted-foreground leading-relaxed">
                   <div className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                     <p className="text-sm">Pre & post-retirement analysis with detailed compound interest tracking</p>
                   </div>
                   <div className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                     <p className="text-sm">Interactive charts with zoom, pan, and tooltip capabilities</p>
                   </div>
                   <div className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                     <p className="text-sm">Comprehensive data tables with expandable yearly projections</p>
                   </div>
                   <div className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                     <p className="text-sm">Side-by-side plan comparison for different withdrawal strategies</p>
                   </div>
                 </div>
