@@ -8,7 +8,7 @@ export default function PhoneMockup({ className = "", screenshot }: PhoneMockupP
     <img 
       src={screenshot} 
       alt="FirePath App Screenshot" 
-      className={`w-4/5 h-auto mx-auto ${className}`}
+      className={`w-full h-auto max-w-[300px] ${className}`}
       data-testid="phone-mockup"
     />
   );

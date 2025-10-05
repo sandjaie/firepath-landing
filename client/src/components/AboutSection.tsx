@@ -37,7 +37,7 @@ export default function AboutSection() {
             <img 
               src={chartsScreenshot} 
               alt="FirePath Charts and Analytics" 
-              className="w-4/5 h-auto mx-auto"
+              className="w-full h-auto max-w-[300px]"
             />
           </div>
         </div>
