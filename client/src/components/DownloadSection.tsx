@@ -1,5 +1,5 @@
 import appStoreBadge from "@assets/app-store-badge.svg";
-import googlePlayBadge from "@assets/google-play-badge.png";
+import googlePlayBadge from "@assets/Store=Google Play, Type=Dark, Language=English-1_1759691189729.png";
 
 export default function DownloadSection() {
   return (
