@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Clock } from "lucide-react";
 import PhoneMockup from "./PhoneMockup";
-import homepageScreenshot from "@assets/homepage-usd-light_1759317816529.png";
+import homepageScreenshot from "@assets/home-page-dark-portrait_1759693139634.png";
 import appStoreBadge from "@assets/app-store-badge.svg";
 import googlePlayBadge from "@assets/Store=Google Play, Type=Dark, Language=English-1_1759691189729.png";
 import {
