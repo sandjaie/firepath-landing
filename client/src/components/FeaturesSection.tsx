@@ -1,23 +1,21 @@
-import { Card } from "@/components/ui/card";
 import { Zap, Settings2, Target } from "lucide-react";
 import PhoneMockup from "./PhoneMockup";
 import projectionsScreenshot from "@assets/projections-usd-ligth_1759317816529.png";
 
 export default function FeaturesSection() {
   return (
-    <section id="features" className="py-20 md:py-32">
+    <section id="features" className="py-24 md:py-32 bg-gray-50/50">
       <div className="max-w-7xl mx-auto px-6 md:px-8">
-        <Card className="overflow-hidden shadow-lg">
-          <div className="grid lg:grid-cols-2 gap-12 p-8 md:p-12">
-            <div className="space-y-8">
-              <div>
+        <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center">
+            <div className="space-y-10">
+              <div className="space-y-6">
                 <h2
-                  className="text-3xl md:text-4xl font-bold mb-4"
+                  className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
                   data-testid="text-features-heading"
                 >
                   How we Calculate?<br />Not so Simple
                 </h2>
-                <p className="text-muted-foreground leading-relaxed italic">
+                <p className="text-lg md:text-xl text-muted-foreground leading-relaxed italic max-w-xl">
                   FirePath calculates your FIRE target based on your lifestyle and
                   gives you multiple strategies to achieve it.
                 </p>
@@ -90,7 +88,6 @@ export default function FeaturesSection() {
               <PhoneMockup screenshot={projectionsScreenshot} />
             </div>
           </div>
-        </Card>
       </div>
     </section>
   );

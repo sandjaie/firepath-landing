@@ -1,4 +1,3 @@
-import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { TrendingUp, Activity, Shield } from "lucide-react";
 import PhoneMockup from "./PhoneMockup";
@@ -6,23 +5,22 @@ import strategiesScreenshot from "@assets/4-plan-dark-portrait_1759317816529.png
 
 export default function StrategiesSection() {
   return (
-    <section className="py-20 md:py-32">
+    <section className="py-24 md:py-32 bg-gradient-to-br from-gray-50 to-gray-100/50">
       <div className="max-w-7xl mx-auto px-6 md:px-8">
-        <Card className="overflow-hidden shadow-lg">
-          <div className="grid lg:grid-cols-2 gap-12 p-8 md:p-12">
+        <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center">
             <div className="flex items-center justify-center lg:justify-start order-2 lg:order-1">
               <PhoneMockup screenshot={strategiesScreenshot} />
             </div>
 
-            <div className="space-y-8 order-1 lg:order-2">
-              <div>
+            <div className="space-y-10 order-1 lg:order-2">
+              <div className="space-y-6">
                 <h2
-                  className="text-3xl md:text-4xl font-bold mb-4"
+                  className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
                   data-testid="text-strategies-heading"
                 >
                   Retirement Withdrawal Strategies
                 </h2>
-                <p className="text-muted-foreground leading-relaxed italic">
+                <p className="text-lg md:text-xl text-muted-foreground leading-relaxed italic max-w-xl">
                   Choose the withdrawal strategy that best fits your retirement
                   goals and risk tolerance.
                 </p>
@@ -103,7 +101,6 @@ export default function StrategiesSection() {
               </div>
             </div>
           </div>
-        </Card>
       </div>
     </section>
   );
