@@ -1,9 +1,21 @@
+import { useState } from "react";
 import PhoneMockup from "./PhoneMockup";
 import homepageScreenshot from "@assets/homepage-usd-light_1759317816529.png";
 import appStoreBadge from "@assets/app-store-badge.svg";
 import googlePlayBadge from "@assets/Store=Google Play, Type=Dark, Language=English-1_1759691189729.png";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+} from "@/components/ui/alert-dialog";
 
 export default function HeroSection() {
+  const [showComingSoon, setShowComingSoon] = useState(false);
+
   return (
     <section
       id="hero"
@@ -47,17 +59,17 @@ export default function HeroSection() {
                     className="h-12"
                   />
                 </a>
-                <a
-                  href="#"
-                  className="inline-block"
-                  data-testid="link-download-android-hero"
+                <button
+                  onClick={() => setShowComingSoon(true)}
+                  className="inline-block cursor-pointer"
+                  data-testid="button-download-android-hero"
                 >
                   <img
                     src={googlePlayBadge}
                     alt="Get it on Google Play"
                     className="h-12"
                   />
-                </a>
+                </button>
               </div>
             </div>
 
@@ -71,6 +83,21 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
+
+      <AlertDialog open={showComingSoon} onOpenChange={setShowComingSoon}>
+        <AlertDialogContent data-testid="dialog-coming-soon">
+          <AlertDialogHeader>
+            <AlertDialogTitle>Coming Soon!</AlertDialogTitle>
+            <AlertDialogDescription>
+              The Android version of FirePath is currently in development and will be available soon. 
+              Stay tuned for updates!
+            </AlertDialogDescription>
+          </AlertDialogHeader>
+          <AlertDialogFooter>
+            <AlertDialogAction data-testid="button-dialog-close">Got it</AlertDialogAction>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
     </section>
   );
 }

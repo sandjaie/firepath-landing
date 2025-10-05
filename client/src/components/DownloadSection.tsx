@@ -1,7 +1,19 @@
+import { useState } from "react";
 import appStoreBadge from "@assets/app-store-badge.svg";
 import googlePlayBadge from "@assets/Store=Google Play, Type=Dark, Language=English-1_1759691189729.png";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+} from "@/components/ui/alert-dialog";
 
 export default function DownloadSection() {
+  const [showComingSoon, setShowComingSoon] = useState(false);
+
   return (
     <section id="download" className="py-24 md:py-32 bg-gradient-to-br from-primary/5 via-white to-accent/5">
       <div className="max-w-4xl mx-auto px-6 md:px-8 text-center">
@@ -31,17 +43,17 @@ export default function DownloadSection() {
                 className="h-14"
               />
             </a>
-            <a
-              href="#"
-              className="inline-block"
-              data-testid="link-download-android"
+            <button
+              onClick={() => setShowComingSoon(true)}
+              className="inline-block cursor-pointer"
+              data-testid="button-download-android"
             >
               <img
                 src={googlePlayBadge}
                 alt="Get it on Google Play"
                 className="h-14"
               />
-            </a>
+            </button>
           </div>
 
           <p className="text-sm text-muted-foreground">
@@ -49,6 +61,21 @@ export default function DownloadSection() {
           </p>
         </div>
       </div>
+
+      <AlertDialog open={showComingSoon} onOpenChange={setShowComingSoon}>
+        <AlertDialogContent data-testid="dialog-coming-soon-download">
+          <AlertDialogHeader>
+            <AlertDialogTitle>Coming Soon!</AlertDialogTitle>
+            <AlertDialogDescription>
+              The Android version of FirePath is currently in development and will be available soon. 
+              Stay tuned for updates!
+            </AlertDialogDescription>
+          </AlertDialogHeader>
+          <AlertDialogFooter>
+            <AlertDialogAction data-testid="button-dialog-close-download">Got it</AlertDialogAction>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
     </section>
   );
 }
