@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Apple, Smartphone } from "lucide-react";
+import { Apple } from "lucide-react";
+import { SiAndroid } from "react-icons/si";
 
 export default function DownloadSection() {
   return (
@@ -34,7 +35,7 @@ export default function DownloadSection() {
               className="rounded-full px-8"
               data-testid="button-download-android"
             >
-              <Smartphone className="mr-2 w-5 h-5" />
+              <SiAndroid className="mr-2 w-5 h-5" />
               Download on Android
             </Button>
           </div>
