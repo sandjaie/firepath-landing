@@ -12,9 +12,9 @@ export default function LandingPage() {
       <Header />
       <main>
         <HeroSection />
+        <AboutSection />
         <FeaturesSection />
         <StrategiesSection />
-        <AboutSection />
         <DownloadSection />
       </main>
       <Footer />
