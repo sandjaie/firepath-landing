@@ -23,7 +23,7 @@ export default function AboutSection() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card className="p-8 space-y-6 hover-elevate transition-all duration-300 md:col-span-2 lg:col-span-1 lg:row-span-2" data-testid="card-fire-calculator">
+            <Card className="p-8 space-y-6 hover-elevate transition-all duration-300" data-testid="card-fire-calculator">
               <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center">
                 <Calculator className="w-7 h-7 text-primary" />
               </div>
@@ -50,7 +50,7 @@ export default function AboutSection() {
               </div>
             </Card>
 
-            <Card className="p-8 space-y-6 hover-elevate transition-all duration-300 md:col-span-2" data-testid="card-projections">
+            <Card className="p-8 space-y-6 hover-elevate transition-all duration-300" data-testid="card-projections">
               <div className="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center">
                 <TrendingUp className="w-7 h-7 text-accent" />
               </div>
@@ -77,7 +77,7 @@ export default function AboutSection() {
               </div>
             </Card>
 
-            <Card className="p-8 space-y-6 hover-elevate transition-all duration-300 md:col-span-2 lg:col-span-1" data-testid="card-scenario-management">
+            <Card className="p-8 space-y-6 hover-elevate transition-all duration-300" data-testid="card-scenario-management">
               <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center">
                 <FolderKanban className="w-7 h-7 text-primary" />
               </div>
