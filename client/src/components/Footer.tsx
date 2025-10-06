@@ -1,3 +1,4 @@
+import { Link } from "wouter";
 import appIcon from "@assets/ios-app-icon-2_1759308693187.png";
 
 export default function Footer() {
@@ -83,13 +84,13 @@ export default function Footer() {
             <h3 className="font-semibold mb-4">Legal</h3>
             <ul className="space-y-3">
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/privacy"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                   data-testid="link-footer-privacy"
                 >
                   Privacy
-                </a>
+                </Link>
               </li>
               <li>
                 <a
