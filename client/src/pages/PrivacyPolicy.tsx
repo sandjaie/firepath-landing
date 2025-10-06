@@ -18,7 +18,7 @@ export default function PrivacyPolicy() {
             Back to Home
           </Link>
 
-          <article className="prose prose-lg max-w-none">
+          <article className="prose prose-sm max-w-none">
             <h1>Privacy Policy</h1>
             <p className="text-muted-foreground">Last updated: October 6, 2025</p>
 
