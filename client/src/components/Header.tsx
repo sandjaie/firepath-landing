@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import appIcon from "@assets/ios-app-icon-2_1759308693187.png";
@@ -57,6 +58,20 @@ export default function Header() {
             >
               About
             </button>
+            <Link
+              href="/userguide"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              data-testid="link-userguide"
+            >
+              User Guide
+            </Link>
+            <Link
+              href="/faq"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              data-testid="link-faq"
+            >
+              FAQ
+            </Link>
             <Button
               onClick={() => scrollToSection("download")}
               className="rounded-full"
@@ -96,6 +111,20 @@ export default function Header() {
               >
                 About
               </button>
+              <Link
+                href="/userguide"
+                className="text-left px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+                data-testid="link-userguide-mobile"
+              >
+                User Guide
+              </Link>
+              <Link
+                href="/faq"
+                className="text-left px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+                data-testid="link-faq-mobile"
+              >
+                FAQ
+              </Link>
               <Button
                 onClick={() => scrollToSection("download")}
                 className="rounded-full w-full"

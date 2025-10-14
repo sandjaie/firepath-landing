@@ -5,6 +5,8 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import LandingPage from "@/pages/LandingPage";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
+import UserGuide from "@/pages/UserGuide";
+import FAQ from "@/pages/FAQ";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -12,6 +14,8 @@ function Router() {
     <Switch>
       <Route path="/" component={LandingPage} />
       <Route path="/privacy" component={PrivacyPolicy} />
+      <Route path="/userguide" component={UserGuide} />
+      <Route path="/faq" component={FAQ} />
       <Route component={NotFound} />
     </Switch>
   );
