@@ -25,7 +25,7 @@ export default function About() {
 
           <div className="prose prose-lg max-w-none">
             <p className="text-lg leading-relaxed mb-6">
-              Hey! I built FirePath during my evenings and weekends because I was struggling to find a simple, honest tool for FIRE planning. Most apps felt either too basic or did not have the flexibility I was looking for and I kept getting lost in spreadsheets.
+              Hi I am Sandjaie Ravi, I built FirePath during my evenings and weekends because I was struggling to find a simple, honest tool for FIRE planning. Most apps felt either too basic or did not have the flexibility I was looking for and I kept getting lost in spreadsheets.
             </p>
 
             <p className="text-lg leading-relaxed">
