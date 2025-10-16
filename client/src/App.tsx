@@ -7,6 +7,7 @@ import LandingPage from "@/pages/LandingPage";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import UserGuide from "@/pages/UserGuide";
 import FAQ from "@/pages/FAQ";
+import Support from "@/pages/Support";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -16,6 +17,7 @@ function Router() {
       <Route path="/privacy" component={PrivacyPolicy} />
       <Route path="/userguide" component={UserGuide} />
       <Route path="/faq" component={FAQ} />
+      <Route path="/support" component={Support} />
       <Route component={NotFound} />
     </Switch>
   );

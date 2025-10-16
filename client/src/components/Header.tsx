@@ -66,11 +66,11 @@ export default function Header() {
               User Guide
             </Link>
             <Link
-              href="/faq"
+              href="/support"
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-              data-testid="link-faq"
+              data-testid="link-support"
             >
-              FAQ
+              Support
             </Link>
             <Button
               onClick={() => scrollToSection("download")}
@@ -119,11 +119,11 @@ export default function Header() {
                 User Guide
               </Link>
               <Link
-                href="/faq"
+                href="/support"
                 className="text-left px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-                data-testid="link-faq-mobile"
+                data-testid="link-support-mobile"
               >
-                FAQ
+                Support
               </Link>
               <Button
                 onClick={() => scrollToSection("download")}
