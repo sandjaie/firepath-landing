@@ -57,25 +57,34 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="font-semibold mb-4">Support</h3>
+            <h3 className="font-semibold mb-4">Resources</h3>
             <ul className="space-y-3">
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/userguide"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                  data-testid="link-footer-userguide"
+                >
+                  User Guide
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/faq"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                   data-testid="link-footer-faq"
                 >
                   FAQ
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/support"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                  data-testid="link-footer-contact"
+                  data-testid="link-footer-support"
                 >
-                  Contact
-                </a>
+                  Support
+                </Link>
               </li>
             </ul>
           </div>
@@ -89,17 +98,8 @@ export default function Footer() {
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                   data-testid="link-footer-privacy"
                 >
-                  Privacy
+                  Privacy Policy
                 </Link>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                  data-testid="link-footer-terms"
-                >
-                  Terms
-                </a>
               </li>
             </ul>
           </div>
