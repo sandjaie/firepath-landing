@@ -51,13 +51,6 @@ export default function Header() {
             >
               Features
             </button>
-            <button
-              onClick={() => scrollToSection("about")}
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-              data-testid="link-about"
-            >
-              About
-            </button>
             <Link
               href="/userguide"
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
@@ -103,13 +96,6 @@ export default function Header() {
                 data-testid="link-features-mobile"
               >
                 Features
-              </button>
-              <button
-                onClick={() => scrollToSection("about")}
-                className="text-left px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-                data-testid="link-about-mobile"
-              >
-                About
               </button>
               <Link
                 href="/userguide"
