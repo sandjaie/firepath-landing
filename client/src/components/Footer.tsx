@@ -1,11 +1,23 @@
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 import appIcon from "@assets/ios-app-icon-2_1759308693187.png";
 
 export default function Footer() {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+  const [location, setLocation] = useLocation();
+  
+  const handleNavClick = (sectionId: string) => {
+    if (location !== "/") {
+      setLocation("/");
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    } else {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
     }
   };
 
@@ -28,7 +40,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <button
-                  onClick={() => scrollToSection("hero")}
+                  onClick={() => handleNavClick("hero")}
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                   data-testid="link-footer-home"
                 >
@@ -37,7 +49,7 @@ export default function Footer() {
               </li>
               <li>
                 <button
-                  onClick={() => scrollToSection("features")}
+                  onClick={() => handleNavClick("features")}
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                   data-testid="link-footer-features"
                 >
@@ -45,13 +57,13 @@ export default function Footer() {
                 </button>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection("about")}
+                <Link
+                  href="/about"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                   data-testid="link-footer-about"
                 >
                   About
-                </button>
+                </Link>
               </li>
             </ul>
           </div>

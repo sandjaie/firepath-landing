@@ -8,6 +8,7 @@ import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import UserGuide from "@/pages/UserGuide";
 import FAQ from "@/pages/FAQ";
 import Support from "@/pages/Support";
+import About from "@/pages/About";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -18,6 +19,7 @@ function Router() {
       <Route path="/userguide" component={UserGuide} />
       <Route path="/faq" component={FAQ} />
       <Route path="/support" component={Support} />
+      <Route path="/about" component={About} />
       <Route component={NotFound} />
     </Switch>
   );
