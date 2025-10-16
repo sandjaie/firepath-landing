@@ -34,14 +34,14 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-6 md:px-8">
         <div className="flex items-center justify-between h-16">
-          <button
-            onClick={() => scrollToSection("hero")}
+          <Link
+            href="/"
             className="flex items-center gap-2 hover-elevate rounded-md px-3 py-2"
             data-testid="button-logo"
           >
             <img src={appIcon} alt="FirePath" className="w-8 h-8 rounded-lg" />
             <span className="text-xl font-bold">FirePath</span>
-          </button>
+          </Link>
 
           <nav className="hidden md:flex items-center gap-8">
             <button
