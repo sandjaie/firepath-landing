@@ -36,6 +36,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           <Link
             href="/"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="flex items-center gap-2 hover-elevate rounded-md px-3 py-2"
             data-testid="button-logo"
           >
