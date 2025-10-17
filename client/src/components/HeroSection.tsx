@@ -50,7 +50,9 @@ export default function HeroSection() {
               </h3>
               <div className="flex flex-col sm:flex-row gap-4 items-start">
                 <a
-                  href="#"
+                  href="https://apps.apple.com/app/id6753652765"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-block"
                   data-testid="link-download-ios-hero"
                 >
