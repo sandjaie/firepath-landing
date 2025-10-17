@@ -34,7 +34,9 @@ export default function DownloadSection() {
         <div className="mt-12 space-y-6">
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <a
-              href="#"
+              href="https://apps.apple.com/app/id6753652765"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block"
               data-testid="link-download-ios"
             >
